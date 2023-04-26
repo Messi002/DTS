@@ -1,19 +1,14 @@
 import {useState} from "react";
 import './style.css';
-import { CiSearch, CiUser } from 'react-icons/ci';
-import { RxEnvelopeClosed } from 'react-icons/rx';
-import { BsBell, BsHouse, BsQuestionCircle } from 'react-icons/bs';
-import { FiCompass } from 'react-icons/fi'
-import { BiUser } from 'react-icons/bi';
-import { TbJumpRope } from 'react-icons/tb'
-import { HiOutlineLogout, HiDotsVertical } from 'react-icons/hi'
+import { BsTrash,BsEye } from 'react-icons/bs';
+import {  BiDotsHorizontalRounded } from 'react-icons/bi';
+import {  HiDotsVertical } from 'react-icons/hi'
 import {RiLoader3Line} from 'react-icons/ri';
-import photo from '../../assets/images/userImg.png'
-import logo from '../../assets/images/logo.png'
 import img1 from '../../assets/images/img1.png'
 import img2 from '../../assets/images/img2.png'
 import img3 from '../../assets/images/img3.png'
 import btmImg from '../../assets/images/home_bottom_img.png'
+import HeaderBar from "../../common/components/header/index";
 
 
 
@@ -27,62 +22,11 @@ function Home() {
       ];
     return (
         <div className="container">
-            {/*side nav here  */}
-            <nav className="sidebar">
-                <div className="logoAndLinks">
-                    <div className="logo">
-                        <img src={logo} alt="logo" className="imgLogo" />
-                        <p>dotech <span style={{ color: "#95D5B2" }}>solutions</span></p>
-
-                    </div>
-                    <ul className="side-nav">
-                        {/* home */}
-
-
-                        <NavBar2 name="Home" barIcon={BsHouse} />
-                        {/* projects */}
-
-
-                        <NavBar2 name="Projects" barIcon={FiCompass} />
-                        {/* account details */}
-
-                        <NavBar2 name="Account Details" barIcon={CiUser} />
-                        {/* requests */}
-
-                        <NavBar2 name="Requests" barIcon={TbJumpRope} />
-                        {/* faqs */}
-
-                        <NavBar2 name="FAQs" barIcon={BsQuestionCircle} />
-                        {/* admin */}
-                        {/* <li className="side-nav__item">
-    <a href="##" className="side-nav__link">
-< BiUser className="side-nav__icon"/>
-<span>Admin</span>
-    </a>
-</li> */}
-
-                        <NavBar2 name="Admin" barIcon={BiUser} />
-
-
-                    </ul>
-                </div>
-
-
-                {/* logout */}
-                <ul className="bottomPart">
-                    {/* <li className="side-nav__item">
-    <a href="##" className="side-nav__link">
-< HiOutlineLogout className="side-nav__icon"/>
-<span>Logout</span>
-    </a>
-</li> */}
-                    <NavBar2 name="Logout" barIcon={HiOutlineLogout} />
-                </ul>
-            </nav>
-
+           
             <div className="content">
                 {/* Header here... */}
-               <Header showGreetings={true} showWelcome={true} bigText="Hello, Sobuj" smallText = "Welcome Back!"/>
+
+<HeaderBar showGreetings={true} showWelcome={true} bigText="Hello, Sobuj" smallText = "Welcome Back!"/>
                 <main className="main"> 
                 {/* SECTION 1: CARDS */}
                 <section className="section1"> 
@@ -95,8 +39,8 @@ function Home() {
                 {/* start */}
                 
                 <Table data={data} />
-                <a href="###" className="table-button">View more</a>   
-                
+                <a href="###" className="table-button">View More  &gt;</a>   
+
                 
                 
                 {/* end */}
@@ -126,52 +70,9 @@ function Home() {
 export default Home;
 
 
-// 1 rem = 10px
 
-const NavBar2 = (props) => {
-    return (
-        <li className="side-nav__item">
-            <a href="##" className="side-nav__link">
-                <props.barIcon className="side-nav__icon" />
-                <span>{props.name}</span>
-            </a>
-        </li>
-    );
-}
 
-const Header = (props) => {
-    return (
-        <header className="header">
-                    <div className="header__hello">
-                        {props.showGreetings && <p className="header__greetings">{props.bigText}</p>}
-                        {props.showWelcome && <span className="header__welcome">{props.smallText}</span>}
-                    </div>
 
-                    <div className="searchAndHeader">
-                        {/* search section */}
-                        <form action="#" className="search">
-                            <input type="search" className="search__input" placeholder="Search..." />
-                            <button className="search__button">  <CiSearch style={{ opacity: "0.4" }} /></button>
-                        </form>
-
-                        {/* user's section here */}
-                        <nav className="user-nav">
-                            <div className="user-nav__icon-box">
-                                <BsBell className="bell" />
-                            </div>
-                            <div className="user-nav__icon-box">
-                                <RxEnvelopeClosed className="envelope" />
-                                <span className="user-nav_notification"></span>
-                            </div>
-                            <div className="user-nav__user">
-                                <img src={photo} alt="user" className="user-nav__user-photo" />
-                                <span className="user-nav__user-name">Soumitro Sobuj</span>
-                            </div>
-                        </nav>
-                    </div>
-                </header>
-    );
-}
 
 const Card = (props) =>{
     return (
@@ -220,6 +121,7 @@ const Table = ({ data }) => {
       }
 
     return (
+        
       <table className="table">
         <thead className="table__head">
           <tr className="table__head-row">
@@ -242,7 +144,7 @@ const Table = ({ data }) => {
           {data.map((item, index) => (
            
             // <tr key={index} style={{ backgroundColor: index % 2 === 0 ? "#F5F5F5 grey" : "#ffffff white" }}>
-            <tr key={index} style={{ backgroundColor: index % 2 === 0 ? "blue" : "red" }}>
+            <tr key={index} style={{ backgroundColor: index % 2 === 0 ? "#F5F5F5" : "#ffffff"}}>
               <td>
               <input type="checkbox" id={`check-${item.id}`} className="checkbox-green" checked={checkedItems[item.id]} onChange={() => handleCheck(item.id)} />                <label htmlFor={`check-${item.id}`}></label>
               </td>
@@ -250,12 +152,13 @@ const Table = ({ data }) => {
               <td>{item.column3}</td>
               <td>{item.column4}</td>
               <td>{item.column5}</td>
-              <td><div className="table__body-completed"></div></td>
-              <td>{item.column7}</td>
+              <td><div className={checkedItems[item.id] ? "table__body-completed" : "table__body-uncompleted"}>Completed</div></td>
+              <td className="table_body-row-icon"><BsEye /><BsTrash style={{marginLeft:"5px", marginRight:"5px"}}/><BiDotsHorizontalRounded/></td>
             </tr>
           ))}
          
         </tbody>
       </table>
+      
     );
   };

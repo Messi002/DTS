@@ -4,121 +4,7 @@
     /* box-shadow: 0 2rem 6rem rgba(0,0,0,.3); */
 }
 
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-width: 14.3rem;
-height: 34rem;
-left: 1.3rem;
-top: 0.8rem;
-    flex: 0 0 18%;
-    background: rgba(255, 255, 255, 0.6);
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.04);
-    border-radius: 1rem;
-    font-size: .9rem;
-   
-    
-}
 
-.logoAndLinks{
-
-}
-
-.side-nav{
-
-}
-
-.logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem 1rem 1.8rem 1rem;
-    padding-top: 0.4rem;
-    background: rgba(42, 38, 66, 0.02);
-border-radius: 15px;
-}
-
-.imgLogo{
-    height: 2rem;
-    width: 2rem;
-}
-
-.side-nav__icon{
-    width: 1rem;
-    height: 1rem;
-    text-align: center;
-    margin-right: 0.6rem;
-}
-.side-nav__item{
-    position: relative;
-    list-style: none;
-    
-}
-
-.side-nav__item::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 6px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: #2A2642;
-    transform: scaleY(0);
-    transition: transform .3s;
-    
-}
-
-.side-nav__item:hover::before{
-transform: scaleY(1);
-}
-.side-nav__link:link{
-display: block;
-margin:0rem auto 1rem auto;
-width: 75%;
-text-decoration: none;
-padding: .3rem 1.5rem;
-font-family: 'Actor';
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-text-transform: capitalize;
-color: rgba(0, 0, 0, 0.3);
-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-display: flex;
-align-items: center;
-
-}
-
-.side-nav__link:hover{
-    /* width: min-content; */
-    color: #FFFFFF;
-    background: #2A2642;
-box-shadow: 0px 10px 40px rgba(42, 38, 66, 0.3);
-border-radius: 5px;
-}
-
-
-
-.bottomPart{
-    padding-bottom:1.5rem ;
-   
-}
-
-.bottomPart > .side-nav__item > .side-nav__link{
-    background-color: #95D5B2;
-    border-radius: 5px;
-    color: #FFFFFF;
-}
-
-
-
-/* end of side nav */
 
 .content{
     flex: 1;
@@ -130,150 +16,6 @@ left: 17rem;
 top: 1.5rem;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* height: 4rem; */
-    /* background-color: red; */
-    /* width: 100%; */
-    /* width: 100%; */
-   
-    
-}
-
-.header__hello{
-   padding-top: 1rem;
-}
-
-.header__greetings {
-    font-family: 'Acme';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.2rem;
-    line-height: 1.5rem;
-  }
-  
-
-  .header__welcome {
-    font-family: 'Actor';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-    text-transform: capitalize;
-    color: #000000;
-    opacity: 0.2;
-  }
-
-.searchAndHeader{
-    display: flex;
-    align-items: center;
-    justify-content: center;   
-}
-
-.search{
-    /* padding: 0;
-background-color: red;
-width: 20rem;
-display: flex;
-align-items: center;
-justify-content: center; */
-}
-  .search__input {
-
- font-size: inherit;
- font-family: inherit;
- border: none;
- padding: .5rem 1rem;
-
- /* width: 40%; */
- width: 90%;
-    background: #FFFFFF;
-border-radius: 5px;
-transition: all .2s;
-margin-right: -1rem;
-  }
-  .search__input:focus{
-    /* width: 45%; */
-    width: 100%;
-
-    outline: none;
-  }
-  
-  .search__button {
-
-    outline: none;
-    width: 1%;
-    background: #FFFFFF;
-    border: none;
-
-    /* styles for .search__button */
-  }
-
-
-
-  .user-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  .user-nav__icon-box{
-   
-    margin: 0.5rem 0.5rem 0.5rem 0rem;
-    cursor: pointer;
-    background: #f8f5f5;
-border-radius: 4px;
-padding: 0.2rem 0.2rem;
-
-  }
-  .user-nav__icon-box:first-child{
-    margin-left: 0.6rem;
-  }
-.bell{
-    
-    height: 0.7rem;
-    width: 1.2rem;
-}
-
-.envelope{
-    position: relative;
-    height: 0.7rem;
-    width: 1.2rem;
-}
-
-
-.user-nav_notification{
-    position: absolute;
-    top: 1.85rem;
-    right: 6.67rem;
-    color: red;
-    height: 0.3rem;
-    width: 0.3rem;
-    border-radius: 50%;
-    background-color: red;
-
-}
-
-.user-nav__user{
-display: flex;
-align-items: center
-;
-}
-
-.user-nav__user-photo{
-    height: 2rem;
-
-}
-
-.user-nav__user-name{
-
-}
-
-
-  /* don't reach here */
 
 .main{
     margin-top: 1.5rem;
@@ -294,7 +36,14 @@ display: flex;
 justify-content: space-between;
 padding: 1rem ;
 box-shadow: 0px 10px 40px rgba(42, 38, 66, 0.3);
+transform: scale(1);
+transition: transform .2s cubic-bezier(0.215, 0.610, 0.355, 1);
+cursor: pointer;
 
+}
+
+.card:hover{
+    transform: scale(1.1);
 }
 .card__left-section{
 
@@ -401,17 +150,20 @@ opacity: 0.2;
 .bottom__left-section > button{
     margin-top: 1.8rem;
     background: #2A2642;
-box-shadow: 0px 6px 40px rgba(149, 213, 178, 0.25);
+/* box-shadow: 0px 6px 40px rgba(149, 213, 178, 0.25); */
 padding: 0.8rem 3.5rem;
 font-size: 0.6rem;
 border: none;
 border-radius: 4px;
 color: white;
-transform: scaleY(1);
+transform:translateY(1);
+transition: transform .3s ease-in-out;
 }
 
 .bottom__left-section > button:hover {
-    transform: scaleY(0);
+    transform: translateY(2);
+    box-shadow: 0px 6px 40px rgba(22, 22, 22, 0.5);
+
 }
 
 .bottom__right-section > img{
@@ -421,7 +173,10 @@ transform: scaleY(1);
 
 /* TABLE SECTION */
 
-.section1{}
+.section2{
+    margin: 1rem 0;
+    background-color: white;
+}
 .table{
     border-collapse: collapse;
     width: 100%;
@@ -439,6 +194,7 @@ border-color: orange;
 
 .table__body{
     width: 100%;
+    text-align: center;
 }
 
 /* input[type="checkbox"]:checked + label::after {
@@ -452,7 +208,6 @@ border-color: orange;
     display: none;
   }
   
-  /* Create a custom element that looks like a checkbox */
   .checkbox-green + label {
     display: inline-block;
     background-color: #F2F2F2;
@@ -460,14 +215,13 @@ border-color: orange;
     height: 13px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    cursor: pointer;
   }
   
-  /* Change the appearance of the custom element when it is checked */
   .checkbox-green:checked + label {
     background-color: #1FBB6A;
   }
   
-  /* Add a white checkmark to the custom element when it is checked */
   .checkbox-green:checked + label::after {
     content: '';
     display: block;
@@ -480,4 +234,78 @@ border-color: orange;
     
   }
 
-.table-button{}
+  .table__body-uncompleted{
+    font-family: 'Actor';
+font-style: normal;
+font-weight: 400;
+    width: fit-content;
+    margin: 0 auto;
+
+    background: rgba(31, 187, 106, 0.1);
+    width: 50%;
+    height: 1.2rem;
+    color: #1FBB6A;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+text-align: center;
+
+border-radius: 20.6396px;
+  }
+
+  .table__body-completed{
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    height: 1.2rem;
+    width: 50%;
+    height: 1.2rem;
+        background: #1FBB6A;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+border-radius: 20.6396px;
+color: #FFFFFF;
+font-family: 'Actor';
+font-style: normal;
+font-weight: 400;
+  }
+
+  th {
+    padding: 10px 2px;
+  }
+  tr{
+    margin: 20px;
+  }
+  td {
+    padding: 10px 2px;
+  }
+  td:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  td:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+
+
+.table-button{
+    padding: 8px 16px;
+    background: #95D5B2;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+
+display: block;
+
+    font-family: 'Acme';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+text-transform: capitalize;
+}
+
+.table_body-row-icon > * {
+color: rgba(42, 38, 66, 0.2);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
