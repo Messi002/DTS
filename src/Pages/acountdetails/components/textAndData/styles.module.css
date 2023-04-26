@@ -1,0 +1,46 @@
+
+
+.list{
+    list-style: none;
+    /* padding: 3rem 0; */
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.list__item{
+    flex: 0 0 50%;
+    margin-bottom: .5rem;
+    /* margin-right: .2rem; */
+    /* background-color: blue; */
+
+}
+
+.list__item > p {
+    font-family: 'Acme';
+font-style: normal;
+font-weight: 400;
+font-size: 0.9rem;
+text-transform: capitalize;
+
+color: #000000;
+}
+
+.list__item_info{
+    background: #FBFBFB;
+border-radius: 5px;
+width: 90%;
+padding: 8px 10px;
+
+font-family: 'Actor';
+font-style: normal;
+font-weight: 400;
+font-size: .7rem;
+
+
+text-transform: capitali;
+
+color: rgba(0, 0, 0, 0.6);
+margin-left: 0.5rem;
+}

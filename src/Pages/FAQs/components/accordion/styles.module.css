@@ -1,0 +1,79 @@
+.accordion__button{
+    background: #FBFBFB;
+  border-top-right-radius: 11px;
+    border-top-left-radius: 11px;
+  color: #444;
+  cursor: pointer;
+  padding: 8px 18px 13px 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-family: 'Acme';
+font-style: normal;
+font-weight: 400;
+color: #000000;
+}
+
+.active1, .accordion__button:hover {
+  background: #FFFFFF;
+
+}
+
+.accordion__button::after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active1::after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+  padding: 0 18px 5px 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.panel.active {
+  max-height: 500px; 
+box-shadow: 0px 20px 50px rgba(42, 38, 66, 0.5);
+border-bottom-left-radius: 11px;
+border-bottom-right-radius: 11px;
+margin-bottom: 1rem;
+
+  
+
+}
+
+.para{
+    font-family: 'Actor';
+font-style: normal;
+font-weight: 400;
+color: #000000;
+opacity: 0.5;
+font-size: 0.8rem;
+
+/* line-height: 30px; */
+}
+
+
+
+
+
+
+
+/* 
+Meekness
+Competence
+Credibility or a good name
+light: knowledge wisdom and understanding
+favour
+relationship
+*/

@@ -1,24 +1,23 @@
 import React from 'react'
 import HeaderBar from '../../common/components/header'
-import './style.css';
-
+import styles from './styles.module.css';
 export default function Requests() {
   return (
-    <div className="content">
+    <div className={styles.content}>
     {/* Header here... */}
 
 <HeaderBar showGreetings={true} showWelcome={true} bigText="Hello, Sobuj" smallText = "Welcome Back!"/>
     
     
-    <main className="main"> 
+    <main className={styles.main}> 
     {/* SECTION 1: CARDS */}
-    <section className="section1"> 
+    <section className="acc-section1"> 
     
  
      </section>
 
 
-    <div className="section2"> 
+    <div className="acc-section2"> 
     {/* start */}
     
 

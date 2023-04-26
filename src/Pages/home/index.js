@@ -12,11 +12,11 @@ import HomeTable from './components/table/index'
 
 function Home() {
     const data = [
-        { id: 1, column1: "Data 1", column2: "Data 2", column3: "Data 3", column4: "Data 4", column5: "Data 5", column6: "Data 6", column7: "Data 7" },
-        { id: 2, column1: "Data 1", column2: "Data 2", column3: "Data 3", column4: "Data 4", column5: "Data 5", column6: "Data 6", column7: "Data 7" },
-        { id: 3, column1: "Data 1", column2: "Data 2", column3: "Data 3", column4: "Data 4", column5: "Data 5", column6: "Data 6", column7: "Data 7" },
-        { id: 4, column1: "Data 1", column2: "Data 2", column3: "Data 3", column4: "Data 4", column5: "Data 5", column6: "Data 6", column7: "Data 7" },
-        { id: 5, column1: "Data 1", column2: "Data 2", column3: "Data 3", column4: "Data 4", column5: "Data 5", column6: "Data 6", column7: "Data 7" },
+        { id: 1,  column2: "#2540", column3: "Jordan Smith", column4: "31 July 2022", column5: "$62.00", },
+        { id: 2,  column2: "#2540", column3: "Jordan Smith", column4: "31 July 2022", column5: "$62.00", },
+        { id: 3,  column2: "#2540", column3: "Jordan Smith", column4: "31 July 2022", column5: "$62.00", },
+        { id: 4,  column2: "#2540", column3: "Jordan Smith", column4: "31 July 2022", column5: "$62.00", },
+        { id: 5,  column2: "#2540", column3: "Jordan Smith", column4: "31 July 2022", column5: "$62.00", },
       ];
     return (
         // <div className="container">

@@ -40,12 +40,12 @@ export default function HomeTable(props) {
             <label htmlFor="check-all"></label>          
                  </th>
    
-        <th>Column 1</th>
-        <th>Column 2</th>
-        <th>Column 3</th>
-        <th>Column 4</th>
-        <th>Column 5</th>
-        <th>Column 6</th>
+        <th>Order Id</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Amount</th>
+        <th>Status</th>
+        <th>Action</th>
     
       </tr>
     </thead>

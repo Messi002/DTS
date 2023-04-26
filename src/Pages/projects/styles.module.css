@@ -1,5 +1,4 @@
 
-
 .content{
     flex: 1;
     /* background-color: orchid; */
@@ -7,7 +6,6 @@
     width: 60rem;
 /* height: 62px; */
 left: 17rem;
-background-color: chartreuse;
 top: 1.5rem;
 }
 
