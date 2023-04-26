@@ -10,7 +10,14 @@ import TextAndData from './components/textAndData';
 export default function AccountDetails() {
 
   const data = [
-  
+    { id: 1, title: "company Name", content: "IT Staffing Agency", },
+    { id: 2, title: "Email Address", content: "ISoumitro Sobuj@gmail.com", },
+    { id: 3, title: "contact number", content: "+316 12 34 56 78", },
+    { id: 4, title: "Address", content: "1368 Hayhurst lane.", },
+    { id: 5, title: "Country", content: "United states", },
+    { id: 6, title: "City", content: "Mcallen", },
+    { id: 7, title: "State", content: " New york", },
+    { id: 8, title: "Zip code", content: "11357", },
   ];
   return (
     <div className={styles.content}>
