@@ -1,8 +1,4 @@
-.container{
-    max-width: 120rem;
-    display: flex;
-    /* box-shadow: 0 2rem 6rem rgba(0,0,0,.3); */
-}
+
 
 .content{
     flex: 1;
@@ -13,4 +9,8 @@
 left: 17rem;
 background-color: chartreuse;
 top: 1.5rem;
+}
+
+.main{
+    margin-top: 1.5rem;
 }

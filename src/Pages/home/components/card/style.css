@@ -1,0 +1,82 @@
+.card{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem ;
+    box-shadow: 0px 10px 40px rgba(42, 38, 66, 0.3);
+    transform: scale(1);
+    transition: transform .2s cubic-bezier(0.215, 0.610, 0.355, 1);
+    cursor: pointer;
+    
+    }
+    
+    .card:hover{
+        transform: scale(1.1);
+    }
+    .card__left-section{
+    
+    }
+    
+    .card__left-section_img{
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        display: block;
+        width: fit-content;
+        height: 2.6rem;
+        padding: 0.4rem;
+        border-radius: 5px;
+    }
+    
+    .card__left-section > p:nth-child(2){
+    
+        font-family: 'Abyssinica SIL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.5rem;
+    line-height: 16px;
+    text-transform: capitalize;
+    
+    color: #000000;
+        }
+        .card__left-section > p:nth-child(3){
+            font-family: 'Acme';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.3rem;
+            line-height: 30px;
+       
+            
+            
+            color: #000000;
+            }
+    .card__left-section > p:last-child{
+        font-family: 'Actor';
+        font-style: normal;
+        font-weight: 400;
+        font-size: .6rem;
+        line-height: 5px;
+        text-transform: capitalize;
+        
+        color: #000000;
+    }
+    
+    .card__right-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .card__right-section-more{
+        width: fit-content;
+        align-self: flex-end;
+    
+        border: 1px solid #A7A7A7;
+        text-align: center;
+        padding-top: .2rem;
+        border-radius: 3px;
+    }
+    .card__right-section-icon{
+        font-size: 5rem;
+        color: lightgrey;
+    }
+    
+    

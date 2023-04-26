@@ -1,0 +1,15 @@
+
+.content{
+    flex: 1;
+    /* background-color: orchid; */
+    position: absolute;
+    width: 60rem;
+/* height: 62px; */
+left: 17rem;
+background-color: chartreuse;
+top: 1.5rem;
+}
+
+.main{
+    margin-top: 1.5rem;
+}

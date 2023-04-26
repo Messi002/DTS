@@ -7,13 +7,12 @@ import Projects from './Pages/projects/index'
 import LastRequestPage from './Pages/requestlast/index'
 import Requests from './Pages/requests/index'
 import SideBarNav from './common/components/sidebar/index'
-import {BrowserRouter as Router, Routes, Route, Outlet} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-    {/* <Home/> */}
-    <Router>
+ <Router>
 <SideBarNav/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -24,7 +23,7 @@ function App() {
         <Route path='/lastrequestpage' element={<LastRequestPage/>}/>
         <Route path='/request' element={<Requests/>}/>
       </Routes>
-    </Router>
+    </Router> 
     </div>
   );
 }
