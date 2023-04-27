@@ -5,6 +5,7 @@ import HeaderBar from '../../common/components/header'
 import styles from './styles.module.css';
 import photo from '../../assets/images/userImg.png'
 import TextAndData from './components/textAndData';
+import btmImg from '../../assets/images/acctImg.png'
 
 
 export default function AccountDetails() {
@@ -54,10 +55,20 @@ export default function AccountDetails() {
     
     {/* end */}
      </div>
-    <div className={styles.section3}> 
   
-     </div>
     </main>
+    <div className={styles.section3}> 
+    <div className={styles.bottom}>
+                    <div className={styles.bottom__left_section}>
+                        <p>Do you need our help?</p>
+                        <p className={styles.text2} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum pretium mollis. Suspendisse convallis vitae </p>
+                        <button>Contact Us</button>
+                    </div>
+                    <div className={styles.bottom__right_section}>
+                        <img src={btmImg} alt="bottom_img"/>
+                    </div>
+                </div>
+     </div>
 </div>
 
   )
